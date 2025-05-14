@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Huang</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./projects.css">
+</head>
+<body>
+    <h1>Elevator System Simulation</h1>
+    <h2>Last updated: May 14 2025</h2>
+    <h3>Project Date: March 2025</h3>
+    <h4>Technologies used: C++, Qt</h4>
+    <p>This is a project that I also built in my most recent semester. This project was the third assignment in a course about software engineering. The two previous assignments involved creating designs for this elevator system, and the third assignment was actually implementing the design. The result is this project. This project involves simulating how an elevator works. The project determines how an elevator will pick up and drop off passengers, implemented with some safety features. There are 5 safety features for 5 different events implemented in this simulation which are: power outage, fire alarm, door obstacle, overload, and help call.</p>
+    <br>
+    <img src="../images/elevator setup.png" alt="">
+    <p>This here is the home page for the simulation. To do anything else, you must first setup an elevator scenario, which involves choosing the number of passengers, elevators and floors. If you do not save your setup, then you will not be able to set up the behaviours of the passengers, elevators, and floors, and so you will not be able to run the simulation.</p>
+    <br>
+    <img src="../images/elevator passenger setup.png" alt="">
+    <p>Once you have selected your setup, you can start setting up behaviours for your objects. This image here is the setup page for a passenger. A passenger has a starting floor, their desired floor, and the elevator they will board.</p>
+    <br>
+    <img src="../images/elevator elevator setup.png" alt="">
+    <p>This here is an elevator setup. You can select its starting floor. It will then go to pick up passengers and drop passengers off based on the closest floor.</p>
+    <br>
+    <img src="../images/elevator floor setup.png" alt="">
+    <p>This here is for a floor setup. For each floor, you can select whether or not the floor is safe. The safe floors are important for the fire alarm and power outage events. In these two events, the elevator will go to the nearest safe floor.</p>
+    <br>
+    <img src="../images/elevator simulation screen.png" alt="">
+    <p>This here is the actual simulation of the elevator system once everything is setup. If you did not properly set up the simulation, then there will be a message telling you that you did not set up your simulation properly. Otherwise, there are a variety of buttons that you can press here to change the scenarios. At first, I was going to pre-program the safety events, but I found that it was simpler to allow the admin to choose an event whenever, while keeping the same desired result.</p>
+    <br>
+    <h2 class="reflections">Reflections</h2>
+    <p>This was my first time using the Qt framework, and technically the first project that I built with C++, although I have had C++ experience in the past with assignments in previous courses. I found that the Qt framework has a lot of convenient objects, such as a QTimer object, but there were also a lot of quirks such as the signal and slots system. The hardest part in creating this project was definitely synchronizing events with QTimer.</p>
+    <br>
+    <p>Thanks for stopping by. Click the link below to go back to home.</p>
+    <a href="../index.html">Click here to go back to home</a>
+</body>
+</html>

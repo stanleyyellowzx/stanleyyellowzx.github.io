@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Huang</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./projects.css">
+</head>
+<body>
+    <h1>t:slim X2 Insulin Pump Simulation</h1>
+    <h2>Last updated: May 14 2025</h2>
+    <h3>Project Date: March 2025 - April 2025</h3>
+    <h4>Technologies used: C++, Qt</h4>
+    <p>In my most recent semester, I took a course involving a group project, and this was the result of that project. In a team of 4, we developed this simulation of the t:slim X2 Insulin Pump, which is a device that allows users to deliver insulin.</p>
+    <p>The features that I implemented in this simulation were mostly quality of life features. These features were a lock screen, a charging screen, data storage of events, and warning features.</p>
+    <br>
+    <img src="../images/tslim lock screen.png" alt="">
+    <p>The above image is the lockscreen. The green bar shows the input of the user, and the blue bar displays a message telling the user that the passcode they entered was incorrect if they enter the wrong passcode. Currently, our implementation does not have a way to change the passcode, but that is a feature that could be implemented.</p>
+    <br>
+    <img src="../images/tslim charge screen.png" alt="">
+    <p>The above image is the charging screen for the pump. Since we did not have access to actual hardware, I created this screen to simulate charging and refilling insulin. The percentage bar shows the current battery of the device. To charge the battery, you need to hold down on the charge pump button until it reaches 100%, in order to be able to access the home or continuous glucose monitoring (CGM) home screen. The refill insulin button refills the insulin of the pump as soon as you click it. You cannot see the insulin from this screen, but in the home screen and the CGM home screen, you are able to see how much insulin is left.</p>
+    <br>
+    <img src="../images/tslim history screen.png" alt="">
+    <br>
+    <img src="../images/tslim view events.png" alt="">
+    <p>These two images are related to the data storage of events. The top image shows the different events there are and filters the events that you want to see. The bottom image is the screen you see when you click one of the filters. To see the information of an event at any given time, you would just click the time on the time bar that you want to see.</p>
+    <br>
+    <img src="../images/tslim warning.png" alt="">
+    <p>Lastly, this image here is one such case of a warning event. All of the warnings events have a popup window like this to tell you what the warning event is. These events are all logged and you can view them in the warnings on the data storage page.</p>
+    <br>
+    <h2 class="reflections">Reflections</h2>
+    <p>This was the first time that I worked on a project in a team. I wouldn't say this was difficult per se, but the most inconvenient part of working in a team was resolving merge conflicts on Git. Aside from that, I feel that working on a team is very nice, as you are able to divide up tasks and complete projects much faster. You also get the benefit of using others code without knowing exactly how the code works.</p>
+    <br>
+    <p>Thanks for stopping by. Click the link below to go back to home.</p>
+    <a href="../index.html">Click here to go back to home</a>
+</body>
+</html>

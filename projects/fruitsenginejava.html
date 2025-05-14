@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Huang</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./projects.css">
+</head>
+<body>
+    <h1>Fruits Search Engine (Java Version)</h1>
+    <h2>Last updated: May 14 2025</h2>
+    <h3>Project Date: December 2023</h3>
+    <h4>Technologies used: Java, JavaFX</h4>
+    <p>Previously, I implemented a fruits search engine project using Python, and here I've reimplemented it using Java. With Java, I was able to create a GUI using JavaFX to allow users to be able to perform search queries through an interface rather than a terminal. This project scrapes data from sites with a format like this link: <a href="https://people.scs.carleton.ca/~davidmckenney/tinyfruits/N-0.html">Link</a> and then calculates TF-IDFs for all of the unique words that are found and page ranks which are used to determine which pages show up for search queries. Depending on the amount of incoming/outgoing links, the scraping can take anywhere from a few seconds to 2 minutes.</p>
+    <br>
+    <img src="../images/fruits search engine java.png" alt="">
+    <p>This here is what the GUI looks like. Users are able to enter their search query in the long bar, the number of results they would like to see in the box labeled "enter number of searches" and then the user can add a boost to their search. The boost uses an algorithm to return results that are more relevant to the search query instead of just pages that spam a particular word to try and get search queries to match to those pages.</p>
+    <br>
+    <h2 class="reflections">Reflections</h2>
+    <p>Implementing this version of the fruits search engine was much easier than the Python version since I already had experience with Java. I also feel that Java was a better tool for this task as it involved scraping and parsing data, and then saving that data into files. I would say that the scraping and parsing data was simpler with Python, but saving calculated values such as TF-IDFs and page ranks was much simpler as you are able to save entire objects to files.</p>
+    <br>
+    <p>Thanks for stopping by. Click the link below to go back to home.</p>
+    <a href="../index.html">Click Here to go back to home</a>
+</body>
+</html>

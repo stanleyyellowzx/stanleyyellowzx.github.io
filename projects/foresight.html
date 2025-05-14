@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Huang</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./projects.css">
+</head>
+<body>
+    <h1>Foresight</h1>
+    <h2>Last updated: May 14 2025</h2>
+    <h3>Project Date: November 2024 - December 2024</h3>
+    <h4>Technologies used: JavaScript, Python, SQL, HTML, CSS, ExpressJS</h4>
+    <a href="https://github.com/stanleyyellowzx/Foresight">Project GitHub</a>
+    <p>This was a project that I built for my final project in my database course. My database was centered around Pokemon data, and what my project allows you to do is to search up different Pokemon, and you will be able to see information regarding that Pokemon. Along with searching up certain Pokemon, you can find Pokemon based on types, abilities, or moves. There is also a type matchup chart. I originally wanted to have a feature to allow users to build different teams inside the application, but I ran out of time to implement that feature, so the project has extra buttons that do not function, and the database has many extra tables that are left unused.</p>
+    <br>
+    <p>To start with this project, I first needed to get data for my database. I did not want to manually populate my database, so I created some tools to get the data for me. For the moves, abilities, items, and natures, I used Python's beautifulsoup4 library to scrape data from a variety of different sites. This was not my first time scraping data, as I have had experience web scraping from previous projects, but this was my first time using the beautifulsoup4 library specifically. This library was much simpler to use, as previously I was using string operations to manual parse data. The beautifulsoup4 library had many different functions that I could use to grab the data that I needed after seeing the HTML structure of the pages that I was scraping from. The rest of the data, which were the Pokemon abilities, the Pokemon themselves, images of the Pokemon, their moves, and their types, I used JavaScript to interact with PokeAPI, a free RESTful API containing Pokemon data. This resulted in my database having about 100000 entries of data, so I am definitely glad that I did not have to manually enter data in. There were some inconsistencies with data between the different sites, so I had to go manually change those, but I mostly avoided having to manually enter data myself, which I am very glad for.</p>
+    <br>
+    <img src="../images/foresight home.png" alt="">
+    <p>The image above is the home page of Foresight. As I mentioned before, there were more features that I wanted to implement, but due to time constraints I could not, so there are a bunch of buttons that are "work in progress".</p>
+    <br>
+    <img src="../images/foresight pokemon search.png" alt="">
+    <p>This is what a Pokemon search looks like. You are able to see the information about the Pokemon, which includes: Pokedex number, name, types, an image of the Pokemon, stats, abilities, and moves. The add button was for the feature where they could build a team, but as I mentioned, that feature was not implemented. You are also able to click the types, abilities, and moves. Clicking any of them will bring you to the respective page to show information of whatever you clicked.</p>
+    <br>
+    <img src="../images/foresight type search.png" alt="">
+    <p>This is what the type search looks like. You search up one of the 18 Pokemon types, and you will get a list of all the Pokemon that are the type that you searched up. This list also shows each Pokemon's data, but it is not as in depth as the Pokemon search, as it does not show their moves and abilities.</p>
+    <br>
+    <img src="../images/foresight move search.png" alt="">
+    <p>This here is a move search. The information given about the move is the name of the move, the type of the move, the damage, the accuracy, the category of the move, and any effect the move might have. For the accuracy, the image with a red background is a physical move, a blue background is a special move, and a grey background is a status move. After the information of the move, a list of Pokemon that can learn the move is shown, and for each Pokemon, their data is shown.</p>
+    <br>
+    <img src="../images/foresight ability search.png" alt="">
+    <p>This here is an ability search. It is similar to the move search, but abilities have less information. Abilities just have a name and then an effect. After this information is shown, a list of Pokemon which can have this ability is also shown.</p>
+    <br>
+    <img src="../images/foresight type matchup search.png" alt="">
+    <p>This here is the type matchup search. You are able to search up a type, and then see how it matches up against other types. The effectiveness tells you how the type on the left matches up against the type on the right offensively. Neutral means that attacks will do their regular damage, super effective means attacks will do 2x their regular damage, and not very effective means attacks will do 0.5x their regular damage.</p>
+    <br>
+    <h2 class="reflections">Reflections</h2>
+    <p>This was my first time working with a database in an application. Since I was using a database here, I was also required to use a server and this was also the first time that I used a server for a project. To interact with my database, I used the better-sqlite3 library in JavaScript, which was a very nice library allowing me to interact with my database synchronously. My other option was the sqlite3 library, which was an asynchronous library. I tried using the sqlite3 library at first, but found the better-sqlite3 library much easier to use since it was asynchronous. Writing the actual JavaScript code was very simple with the better-sqlite3 library, as all I had to do was basically perform SQL queries to get the data that I needed. The challenging part of this project was taking the data and then inserting it into the frontend for the users. To do this, I sent in the data that was returned in an array, and then used map functions to to create HTML tags to add to templates. I then served these templates to the frontend to show to the user. One thing that I think I should definitely change is how my server works. For some reason, at the time I created this project, I used post calls even though they were scenarios where I definitely should have used get calls. That could be a starting change if I decide to come back to this project.</p>
+    <br>
+    <p>Thanks for stopping by. Click the link below to go back to home.</p>
+    <a href="../index.html">Click Here to go back to home</a>
+</body>
+</html>
