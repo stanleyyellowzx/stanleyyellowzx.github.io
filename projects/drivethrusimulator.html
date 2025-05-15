@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Huang</title>
+    <link rel="icon" type="image/x-icon" href="../icons/chineseyellow transparent.png">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./projects.css">
+</head>
+<body>
+    <h1>DriveThru Simulator</h1>
+    <h2>Last updated: May 15 2025</h2>
+    <h3>Project Date: March 2024</h3>
+    <h4>Technologies used: C</h4>
+    <p>I created this project for a systems programming, and it is also the first time I created a project using C. The program simulates a drive-thru of a restaurant by using concurrent programming techniques involving signals, UDP sockets, and multi-threading with semaphores.</p>
+    <br>
+    <img src="../images/drivethru simulator.png" alt="">
+    <p>This image here is what the drive-thru simulation looks like. This graphical interface was created using C's x11 library, although I was not the one who created this graphical interface. I created all of the logic in the backend to have customers show up at the drive-thru. The simulation has a generator which creates a bunch of customer processes, which then connects to a restaurant server. Then, there is then an order taker to take the orders of the customers. To handle customer lineups, I used semaphores to make sure the customers were in the correct place in line.</p>
+    <br>
+    <h2 class="reflections">Reflections</h2>
+    <p>This was the first time that I had to work with concurrent programming. At the time that I created this project, I think that this was definitely the most challenging project I created, since concurrent programming was a new concept to me. I think the difficulty comes with the fact that you have multiple processes running at the same time, and they could be sharing resources between each other, so you need to find a way to coordinate the processes so that multiple processes don't try and access the same resource at the same time.</p>
+    <br>
+    <p>Thanks for stopping by. Click the link below to go back to home.</p>
+    <a href="../index.html">Click here to go back to home</a>
+</body>
+</html>
